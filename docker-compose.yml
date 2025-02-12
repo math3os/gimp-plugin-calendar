@@ -1,0 +1,12 @@
+services:
+  gimp2:
+    build:
+      context: .
+      args:
+        UID: ${UID}
+    environment:
+      - DISPLAY=${DISPLAY}
+    user: "${UID}:${GID}"
+    volumes:
+      - "./:/gimp:rw"
+    network_mode: host

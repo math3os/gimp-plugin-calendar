@@ -1,0 +1,182 @@
+---
+config:
+  header:
+    fontName: Antropos Bold
+    fontSize: 200
+  weekDay:
+    fontName: Lato Bold
+    fontSize: 80
+    paddingFirst: 20
+  dayNumber:
+    fontName: Roboto
+    fontSize: 80
+    padding: 20
+  dayEvent:
+    fontName: Roboto
+    fontSize: 40
+    justify: "TEXT_JUSTIFY_LEFT"
+    padding: 20
+  page:
+    bleed: 150
+    width: 3150
+    height: 2400
+  previousYearMonthSuffix: précédent
+  watermark:
+    position: [2000, 2150]
+    height: 210
+    fontName: Roboto
+    fontSize: 60
+    opacity: 25
+    padding: 125
+  displayNotFoundPageLabel: false
+  displaySkippedPage: false
+  pagesFolderName: Pages
+
+
+dates:
+  - [ "2023-12-22", "Solstice d'hiver" ]
+  - [ "{year}-01-01","Jour de l’an" ]
+  - [ "{year}-01-06","Fête des rois" ]
+  - [ "{year}-02-02","Chandeleur" ]
+  - [ "{year}-02-14","Saint-Valentin" ]
+  - [ "2024-03-04","Mardi gras" ]
+  - [ "{year}-03-17","Saint-Patrick" ]
+  - [ "2024-03-20","Équinoxe de printemps" ]
+  - [ "2024-04-18","Vendredi Saint" ]
+  - [ "2024-04-20","Pâques" ]
+  - [ "{year}-04-22","Jour de la terre" ]
+  - [ "2024-05-11","Fête des mères" ]
+  - [ "2024-05-19","Journée nationale des patriotes" ]
+  - [ "2024-06-15","Fête des pères" ]
+  - [ "2024-06-20","Solstice d’été" ]
+  - [ "2024-06-21","Journée nationale des peuples authochtones" ]
+  - [ "{year}-06-24","Saint-Jean-Baptiste" ]
+  - [ "{year}-07-01","Fête du Canada" ]
+  - [ "2024-09-01", "Fête du Travail"]
+  - [ "2024-09-22","Équinoxe d’automne" ]
+  - [ "{year}-09-29","Saint-Michel" ]
+  - [ "2024-10-13","Action de Grace" ]
+  - [ "{year}-10-31","Halloween" ]
+  - [ "{year}-11-11","Saint-Martin" ]
+  - [ "{year}-11-11","Jour du souvenir" ]
+  - [ "2024-12-21","Solstice d’hiver" ]
+  - [ "{year}-12-06","Saint-Nicolas" ]
+  - [ "{year}-12-25","Noël" ]
+
+# month specific config
+months: #specific months config
+  Janvier:
+    weekBgColor: [109, 114, 187]
+  Février:
+    weekBgColor: [46, 104, 179]
+  Mars:
+    weekBgColor: [231, 162, 207]
+  Avril:
+    weekBgColor: [215, 113, 126]
+  Mai:
+    weekBgColor: [18, 190, 225]
+  Juin:
+    weekBgColor: [212, 91, 100]
+  Juillet:
+    weekBgColor: [164, 187, 220]
+  Août:
+    weekBgColor: [249, 145, 65]
+  Septembre:
+    weekBgColor: [255, 129, 88]
+  Octobre:
+    weekBgColor: [187, 133, 109]
+  Novembre:
+    weekBgColor:  [192, 71, 23]
+  Décembre:
+    weekBgColor: [5, 97, 166]
+  Décembre-précédent:
+    weekBgColor: [0, 0, 0]
+
+# pages are used for assembling
+# every name suffixed with -image should have fields for overlay
+pages:
+    - name: cover
+      student: Raphaël Provencher, Anna Giguère, Mégane Duguay
+      title: Petite fleur
+      level: 3
+
+    - name: note-texte 
+    - name: texte
+
+    - name: janvier-image
+      student: Ismaël Abouayade
+      level: 5
+      title: Les patineurs
+    - name: janvier-calendrier
+
+    - name: février-image
+      student: Mariane Caouette
+      level: 6
+      title: La naissance d'une étoile
+    - name: février-calendrier
+
+    - name: mars-image
+      student: Jordan Lavigne-Zalthendler
+      level: 4
+      title: les 2 loups
+    - name: mars-calendrier
+
+    - name: avril-image
+      student: Flavie Poulin
+      level: 2
+      title: Le temps d'une éclipse
+    - name: avril-calendrier
+
+    - name: mai-image
+      student: Gloria Richard
+      level: 0
+      title: Les petits poissons
+    - name: mai-calendrier
+
+    - name: juin-image
+      student: Florence Flibotte
+      level: 1
+      title: Champ de fleurs
+    - name: juin-calendrier
+
+    - name: juillet-image
+      student: Zoé Guilmette
+      level: 6
+      title: L'énergie dans l'air
+    - name: juillet-calendrier
+
+    - name: août-image
+      student: Victoria Côté
+      level: 1
+      title: La danse du feu
+    - name: août-calendrier
+
+    - name: septembre-image
+      student: Lilayah Taminchi St-Onge
+      level: 4
+      title: L'épée de Michael
+    - name: septembre-calendrier
+
+    - name: octobre-image
+      student: Olivia Roux
+      level: 5
+      title: L'automne en couleurs
+
+    - name: octobre-calendrier
+
+    - name: novembre-image
+      student: Malcom Labrèche
+      level: 2
+      title: Promenade dans les bois
+
+    - name: novembre-calendrier
+
+    - name: décembre-image
+      student: Océane Vincent
+      level: 3
+      title: Olaf et le roi Hiver
+
+    - name: décembre-calendrier
+
+    - name: back-cover
+

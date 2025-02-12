@@ -1,0 +1,8 @@
+*.pyc
+build/*
+Calendrier_2022
+photo-oeuvres
+.env
+package.json
+package-lock.json
+node_modules
