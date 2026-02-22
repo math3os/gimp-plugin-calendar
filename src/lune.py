@@ -525,15 +525,14 @@ def getMoons(year, month):
 
     def loopMonth(_month):
         day = 1
-        while day < 31:
-            print(year, _month, day)
-            jde, dates = calcul_phase(year, _month, day)
+        m = _month
+        while m == _month:
+            #print(year, _month, day)
+            jde, dates = calcul_phase(year, m, day)
             assignMoons(dates)
             last = dates[3].split('-')
-            if int(last[1]) == _month:
-                day = int(last[2])
-            else:
-                break
+            m = int(last[1])
+            day = int(last[2])
 
     if month != 1:
         loopMonth(month-1)

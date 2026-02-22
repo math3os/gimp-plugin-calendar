@@ -10,7 +10,7 @@ import re
 from watermark import watermark
 
 __dirname = os.path.dirname(os.path.abspath(__file__))
-drawings = "%s/../Pages" % __dirname
+drawings = "%s/../pages" % __dirname
 build = "%s/../build" % __dirname
 FILE_NOT_FOUND = 'not_found.xcf'
 

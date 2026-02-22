@@ -130,6 +130,7 @@ def genDays(context, calData):
                 events = None
             layer = genDay(context, layer_group, day, width, height, halfDay, events)
             date = '%s-%02d-%02d' % (context['year'], context['month'], day)
+            print(calData)
             if calData['moons'].has_key(date):
                 print('moon:', date)
                 moon = addMoon(image, calData['moons'][date])
@@ -266,6 +267,7 @@ def generate_month(context, display = True):
     context['cellWidth'] = w
     context['cellHeight'] = h
     context['name'] = monthName
+    print ("year", year)
     calData['moons'] = moon.getMoons(year, month)
 
     genHeader(context, calData['name'])
