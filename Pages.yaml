@@ -1,0 +1,181 @@
+---
+config:
+  header:
+    fontName: Antropos Bold
+    fontSize: 200
+  weekDay:
+    fontName: Lato Bold
+    fontSize: 80
+    paddingFirst: 20
+  dayNumber:
+    fontName: Roboto
+    fontSize: 80
+    padding: 20
+  dayEvent:
+    fontName: Roboto
+    fontSize: 40
+    justify: "TEXT_JUSTIFY_LEFT"
+    padding: 20
+  page:
+    bleed: 150
+    width: 3150
+    height: 2400
+  previousYearMonthSuffix: précédent
+  watermark:
+    position: [2000, 2150]
+    height: 210
+    fontName: Roboto
+    fontSize: 60
+    opacity: 25
+    padding: 125
+  displayNotFoundPageLabel: false
+  displaySkippedPage: false
+  pagesFolderName: pages
+
+
+dates:
+  - [ "{year}-01-01","Jour de l’an" ]
+  - [ "{year}-01-06","Fête des rois" ]
+  - [ "{year}-02-02","Chandeleur" ]
+  - [ "{year}-02-14","Saint-Valentin" ]
+  - [ "2026-02-17","Mardi gras" ]
+  - [ "{year}-03-17","Saint-Patrick" ]
+  - [ "2026-03-20","Équinoxe de printemps" ]
+  - [ "2026-04-03","Vendredi Saint" ]
+  - [ "2026-04-05","Pâques" ]
+  - [ "{year}-04-22","Jour de la terre" ]
+  - [ "2026-05-10","Fête des mères" ]
+  - [ "2026-05-18","Journée nationale des patriotes" ]
+  - [ "2026-06-21","Fête des pères" ]
+  - [ "2026-06-21","Solstice d’été" ]
+  - [ "2026-06-21","Journée nationale des peuples authochtones" ]
+  - [ "{year}-06-24","Saint-Jean-Baptiste" ]
+  - [ "{year}-07-01","Fête du Canada" ]
+  - [ "2026-09-07", "Fête du Travail"]
+  - [ "2026-09-23","Équinoxe d’automne" ]
+  - [ "{year}-09-29","Saint-Michel" ]
+  - [ "2026-10-12","Action de Grace" ]
+  - [ "{year}-10-31","Halloween" ]
+  - [ "{year}-11-11","Saint-Martin" ]
+  - [ "{year}-11-11","Jour du souvenir" ]
+  - [ "2026-12-21","Solstice d’hiver" ]
+  - [ "{year}-12-06","Saint-Nicolas" ]
+  - [ "{year}-12-25","Noël" ]
+
+# month specific config
+months: #specific months config
+  Janvier:
+    weekBgColor: [60, 149, 217]
+  Février:
+    weekBgColor: [59, 171, 245]
+  Mars:
+    weekBgColor: [133, 49, 117]
+  Avril:
+    weekBgColor: [2, 90, 170]
+  Mai:
+    weekBgColor: [94, 128, 89]
+  Juin:
+    weekBgColor: [6, 160, 128]
+  Juillet:
+    weekBgColor: [19, 165, 201]
+  Août:
+    weekBgColor: [249, 145, 65]
+  Septembre:
+    weekBgColor: [247, 192, 109]
+  Octobre:
+    weekBgColor: [247, 91, 52]
+  Novembre:
+    weekBgColor:  [192, 71, 23]
+  Décembre:
+    weekBgColor: [5, 97, 166]
+  Décembre-précédent:
+    weekBgColor: [0, 0, 0]
+
+# pages are used for assembling
+# every name suffixed with -image should have fields for overlay
+pages:
+    - name: cover-image
+      student: Ludovic Grenier
+      title: Jonquilles et tulipes
+      level: 0
+
+    - name: notes-texte
+    - name: texte
+
+    - name: janvier-image
+      student: Illy Malak Hafid
+      level: 0
+      title: Dans la neige blanche
+    - name: janvier-calendrier
+
+    - name: février-image
+      student: Julia Lemay
+      level: 2
+      title: Bonhommes au clair de lune
+    - name: février-calendrier
+
+    - name: mars-image
+      student: Kilianne Levine
+      level: 5
+      title: Le froid de l'hiver
+    - name: mars-calendrier
+
+    - name: avril-image
+      student: Thomas Lavigne-Zaltzhendler
+      level: 3
+      title: Le jour de la terre
+    - name: avril-calendrier
+
+    - name: mai-image
+      student: Alaskan Hamel
+      level: 2
+      title: La spirale de lumière
+    - name: mai-calendrier
+
+    - name: juin-image
+      student: Samson Le Bourhis, Sira Cissoko, Marianne Poisson
+      level: 6
+      title: Les vertus de chevalerie
+    - name: juin-calendrier
+
+    - name: juillet-image
+      student: Victor Bernier
+      level: 6
+      title: Petit pêcheur
+    - name: juillet-calendrier
+
+    - name: août-image
+      student: Élizabeth Poulin
+      level: 1
+      title: L'histoire du champignon
+    - name: août-calendrier
+
+    - name: septembre-image
+      student: Léane Beauvais Coupal
+      level: 3
+      title: Tulipe en folie !
+    - name: septembre-calendrier
+
+    - name: octobre-image
+      student: Sofia Deodato-Leblanc
+      level: 5
+      title: Au bord du feu
+
+    - name: octobre-calendrier
+
+    - name: novembre-image
+      student: Alice Beauchesne-Garneau
+      level: 4
+      title: La marche des lanternes
+
+    - name: novembre-calendrier
+
+    - name: décembre-image
+      student: Hugo Desjardins
+      level: 4
+      title: Spirale de lumière
+
+    - name: décembre-calendrier
+
+    - name: back-cover
+
