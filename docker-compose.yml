@@ -6,7 +6,9 @@ services:
         UID: ${UID}
     environment:
       - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/home/gimp/.Xauthority
     user: "${UID}:${GID}"
     volumes:
       - "./:/gimp:rw"
+      - ~/.Xauthority:/home/gimp/.Xauthority:ro
     network_mode: host

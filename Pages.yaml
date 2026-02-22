@@ -30,61 +30,60 @@ config:
     padding: 125
   displayNotFoundPageLabel: false
   displaySkippedPage: false
-  pagesFolderName: Pages
+  pagesFolderName: pages
 
 
 dates:
-  - [ "2023-12-22", "Solstice d'hiver" ]
   - [ "{year}-01-01","Jour de l’an" ]
   - [ "{year}-01-06","Fête des rois" ]
   - [ "{year}-02-02","Chandeleur" ]
   - [ "{year}-02-14","Saint-Valentin" ]
-  - [ "2024-03-04","Mardi gras" ]
+  - [ "2026-02-17","Mardi gras" ]
   - [ "{year}-03-17","Saint-Patrick" ]
-  - [ "2024-03-20","Équinoxe de printemps" ]
-  - [ "2024-04-18","Vendredi Saint" ]
-  - [ "2024-04-20","Pâques" ]
+  - [ "2026-03-20","Équinoxe de printemps" ]
+  - [ "2026-04-03","Vendredi Saint" ]
+  - [ "2026-04-05","Pâques" ]
   - [ "{year}-04-22","Jour de la terre" ]
-  - [ "2024-05-11","Fête des mères" ]
-  - [ "2024-05-19","Journée nationale des patriotes" ]
-  - [ "2024-06-15","Fête des pères" ]
-  - [ "2024-06-20","Solstice d’été" ]
-  - [ "2024-06-21","Journée nationale des peuples authochtones" ]
+  - [ "2026-05-10","Fête des mères" ]
+  - [ "2026-05-18","Journée nationale des patriotes" ]
+  - [ "2026-06-21","Fête des pères" ]
+  - [ "2026-06-21","Solstice d’été" ]
+  - [ "2026-06-21","Journée nationale des peuples authochtones" ]
   - [ "{year}-06-24","Saint-Jean-Baptiste" ]
   - [ "{year}-07-01","Fête du Canada" ]
-  - [ "2024-09-01", "Fête du Travail"]
-  - [ "2024-09-22","Équinoxe d’automne" ]
+  - [ "2026-09-07", "Fête du Travail"]
+  - [ "2026-09-23","Équinoxe d’automne" ]
   - [ "{year}-09-29","Saint-Michel" ]
-  - [ "2024-10-13","Action de Grace" ]
+  - [ "2026-10-12","Action de Grace" ]
   - [ "{year}-10-31","Halloween" ]
   - [ "{year}-11-11","Saint-Martin" ]
   - [ "{year}-11-11","Jour du souvenir" ]
-  - [ "2024-12-21","Solstice d’hiver" ]
+  - [ "2026-12-21","Solstice d’hiver" ]
   - [ "{year}-12-06","Saint-Nicolas" ]
   - [ "{year}-12-25","Noël" ]
 
 # month specific config
 months: #specific months config
   Janvier:
-    weekBgColor: [109, 114, 187]
+    weekBgColor: [60, 149, 217]
   Février:
-    weekBgColor: [46, 104, 179]
+    weekBgColor: [59, 171, 245]
   Mars:
-    weekBgColor: [231, 162, 207]
+    weekBgColor: [133, 49, 117]
   Avril:
-    weekBgColor: [215, 113, 126]
+    weekBgColor: [2, 90, 170]
   Mai:
-    weekBgColor: [18, 190, 225]
+    weekBgColor: [94, 128, 89]
   Juin:
-    weekBgColor: [212, 91, 100]
+    weekBgColor: [6, 160, 128]
   Juillet:
-    weekBgColor: [164, 187, 220]
+    weekBgColor: [19, 165, 201]
   Août:
     weekBgColor: [249, 145, 65]
   Septembre:
-    weekBgColor: [255, 129, 88]
+    weekBgColor: [247, 192, 109]
   Octobre:
-    weekBgColor: [187, 133, 109]
+    weekBgColor: [247, 91, 52]
   Novembre:
     weekBgColor:  [192, 71, 23]
   Décembre:
@@ -95,86 +94,86 @@ months: #specific months config
 # pages are used for assembling
 # every name suffixed with -image should have fields for overlay
 pages:
-    - name: cover
-      student: Raphaël Provencher, Anna Giguère, Mégane Duguay
-      title: Petite fleur
-      level: 3
+    - name: cover-image
+      student: Ludovic Grenier
+      title: Jonquilles et tulipes
+      level: 0
 
-    - name: note-texte 
+    - name: notes-texte
     - name: texte
 
     - name: janvier-image
-      student: Ismaël Abouayade
-      level: 5
-      title: Les patineurs
+      student: Illy Malak Hafid
+      level: 0
+      title: Dans la neige blanche
     - name: janvier-calendrier
 
     - name: février-image
-      student: Mariane Caouette
-      level: 6
-      title: La naissance d'une étoile
+      student: Julia Lemay
+      level: 2
+      title: Bonhommes au clair de lune
     - name: février-calendrier
 
     - name: mars-image
-      student: Jordan Lavigne-Zalthendler
-      level: 4
-      title: les 2 loups
+      student: Kilianne Levine
+      level: 5
+      title: Le froid de l'hiver
     - name: mars-calendrier
 
     - name: avril-image
-      student: Flavie Poulin
-      level: 2
-      title: Le temps d'une éclipse
+      student: Thomas Lavigne-Zaltzhendler
+      level: 3
+      title: Le jour de la terre
     - name: avril-calendrier
 
     - name: mai-image
-      student: Gloria Richard
-      level: 0
-      title: Les petits poissons
+      student: Alaskan Hamel
+      level: 2
+      title: La spirale de lumière
     - name: mai-calendrier
 
     - name: juin-image
-      student: Florence Flibotte
-      level: 1
-      title: Champ de fleurs
+      student: Samson Le Bourhis, Sira Cissoko, Marianne Poisson
+      level: 6
+      title: Les vertus de chevalerie
     - name: juin-calendrier
 
     - name: juillet-image
-      student: Zoé Guilmette
+      student: Victor Bernier
       level: 6
-      title: L'énergie dans l'air
+      title: Petit pêcheur
     - name: juillet-calendrier
 
     - name: août-image
-      student: Victoria Côté
+      student: Élizabeth Poulin
       level: 1
-      title: La danse du feu
+      title: L'histoire du champignon
     - name: août-calendrier
 
     - name: septembre-image
-      student: Lilayah Taminchi St-Onge
-      level: 4
-      title: L'épée de Michael
+      student: Léane Beauvais Coupal
+      level: 3
+      title: Tulipe en folie !
     - name: septembre-calendrier
 
     - name: octobre-image
-      student: Olivia Roux
+      student: Sofia Deodato-Leblanc
       level: 5
-      title: L'automne en couleurs
+      title: Au bord du feu
 
     - name: octobre-calendrier
 
     - name: novembre-image
-      student: Malcom Labrèche
-      level: 2
-      title: Promenade dans les bois
+      student: Alice Beauchesne-Garneau
+      level: 4
+      title: La marche des lanternes
 
     - name: novembre-calendrier
 
     - name: décembre-image
-      student: Océane Vincent
-      level: 3
-      title: Olaf et le roi Hiver
+      student: Hugo Desjardins
+      level: 4
+      title: Spirale de lumière
 
     - name: décembre-calendrier
 

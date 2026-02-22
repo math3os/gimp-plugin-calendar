@@ -24,7 +24,7 @@ RUN echo '(plug-in-path "${gimp_dir}/plug-ins:${gimp_plug_in_dir}/plug-ins:/gimp
     echo '(font-path "${gimp_dir}/fonts:${gimp_data_dir}/fonts:/gimp/font")' >> /etc/gimp/2.0/gimprc
 
 USER gimp
-RUN cargo-1.80 install moontool -F rich-output
+RUN cargo-1.80 install moontool --version 1.2.0 --locked -F rich-output
 ENV PATH="$PATH:/home/gimp/.cargo/bin"
 
 CMD ["/usr/bin/gimp"]
