@@ -45,9 +45,6 @@ def getMoons(year, month):
                 
     out_moon = {}
 
-
-        
-
     query_date = "%2d-%02d-01" % (year, month)
     print ("query moon of:", query_date)
     moons = query(query_date)
@@ -55,8 +52,12 @@ def getMoons(year, month):
 
     last_moon_date = date2arr(moons["next_new_moon_utc"])
     if isSameMonth(last_moon_date):
-        query_date = "%d-%02d-%02d" % (year, month, int(last_moon_date[2])+1)
-        moons = query(query_date)
+        try:
+            query_date = "%d-%02d-%02d" % (year, month, int(last_moon_date[2]) + 1)
+            moons = query(query_date)
+            set_moons(moons)
 
-        set_moons(moons)
+        except subprocess.CalledProcessError as e:
+            print("Warning: error parsing date %s\n" % query_date)
+
     return out_moon
